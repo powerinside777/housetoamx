@@ -1,0 +1,190 @@
+{
+"bridge": {
+"name": "Homebridge",
+"username": "CC:22:3D:E3:CE:30",
+"port": 51826,
+"pin": "031-45-154"
+},
+
+"description": "This is an example configuration file with all supported devices. You can use this as a template for creating your o",
+
+"platforms": [
+
+    {
+    "platform": "mqtt",
+    "name": "mqtt",
+    "url": "mqtt://10.0.0.61",
+    "topic_prefix": "homebridge",
+    "username": "foo",
+    "password": "bar"
+    }
+  ],
+"accessories": [
+    {
+    "accessory": "mqtt-dimmer",
+    "name": "living room",
+    "url": "mqtt://10.0.0.61",
+    "username": "josh",
+    "password": "josh",
+    "caption": "living room lights",
+    "onValue": "living=on",
+    "offValue": "living=off",
+    "topics":
+      {
+      "statusGet":    "hose/lights",
+      "statusSet":    "house/lights/livingroom"
+      }
+    },
+    {
+    "accessory": "mqtt-dimmer",
+    "name": "frount wall",
+    "url": "mqtt://10.0.0.61",
+    "username": "josh",
+    "password": "josh",
+    "caption": "frount wall lights",
+    "onValue": "living=on",
+    "offValue": "living=off",
+    "topics":
+    {
+    "statusGet":    "hose/lights",
+    "statusSet":    "house/lights/frountwall"
+    }
+    },
+  {
+    "accessory": "mqtt-dimmer",
+    "name": "front pourch",
+    "url": "mqtt://10.0.0.61",
+    "username": "josh",
+    "password": "josh",
+    "caption": "front wall lights",
+    "onValue": "living=on",
+    "offValue": "living=off",
+    "topics":
+    {
+      "statusGet":    "hose/lights",
+      "statusSet":    "house/lights/frontpourch"
+    }
+  },
+  {
+    "accessory": "mqtt-dimmer",
+    "name": "hall way",
+    "url": "mqtt://10.0.0.61",
+    "username": "josh",
+    "password": "josh",
+    "caption": "hall way lights",
+    "onValue": "living=on",
+    "offValue": "living=off",
+    "topics":
+    {
+      "statusGet":    "hose/lights",
+      "statusSet":    "house/lights/hallway"
+    }
+  },
+  {
+    "accessory": "mqtt-dimmer",
+    "name": "master bed",
+    "url": "mqtt://10.0.0.61",
+    "username": "josh",
+    "password": "josh",
+    "caption": "master bed lights",
+    "onValue": "living=on",
+    "offValue": "living=off",
+    "topics":
+    {
+      "statusGet":    "hose/lights",
+      "statusSet":    "house/lights/masterbed"
+    }
+  },
+  {
+    "accessory": "mqtt-dimmer",
+    "name": "master bathroom",
+    "url": "mqtt://10.0.0.61",
+    "username": "josh",
+    "password": "josh",
+    "caption": "master bathroom lights",
+    "onValue": "living=on",
+    "offValue": "living=off",
+    "topics":
+    {
+      "statusGet":    "hose/lights",
+      "statusSet":    "house/lights/masterbathroom"
+    }
+  },
+  {
+    "accessory": "mqtt-dimmer",
+    "name": "isabella",
+    "url": "mqtt://10.0.0.61",
+    "username": "josh",
+    "password": "josh",
+    "caption": "isabella's room lights",
+    "onValue": "living=on",
+    "offValue": "living=off",
+    "topics":
+    {
+      "statusGet":    "hose/lights",
+      "statusSet":    "house/lights/isabella"
+    }
+  },
+  {
+    "accessory": "mqtt-dimmer",
+    "name": "alfresco",
+    "url": "mqtt://10.0.0.61",
+    "username": "josh",
+    "password": "josh",
+    "caption": "alfresco lights",
+    "onValue": "living=on",
+    "offValue": "living=off",
+    "topics":
+    {
+      "statusGet":    "hose/lights",
+      "statusSet":    "house/lights/alfresco"
+    }
+  },
+  {
+    "accessory": "mqtt-dimmer",
+    "name": "kitchen",
+    "url": "mqtt://10.0.0.61",
+    "username": "josh",
+    "password": "josh",
+    "caption": "kitchen lights",
+    "onValue": "living=on",
+    "offValue": "living=off",
+    "topics":
+    {
+      "statusGet":    "hose/lights",
+      "statusSet":    "house/lights/kitchen"
+    }
+  },
+  {
+    "accessory": "mqtt-dimmer",
+    "name": "dinning",
+    "url": "mqtt://10.0.0.61",
+    "username": "josh",
+    "password": "josh",
+    "caption": "dinning lights",
+    "onValue": "living=on",
+    "offValue": "living=off",
+    "topics":
+    {
+      "statusGet":    "hose/lights",
+      "statusSet":    "house/lights/dinning"
+    }
+  },
+  {
+    "accessory": "mqtt-dimmer",
+    "name": "studio",
+    "url": "mqtt://10.0.0.61",
+    "username": "josh",
+    "password": "josh",
+    "caption": "studio lights",
+    "onValue": "living=on",
+    "offValue": "living=off",
+    "topics":
+    {
+      "statusGet":    "hose/lights",
+      "statusSet":    "house/lights/studio"
+    }
+  }
+  ]
+}
+
