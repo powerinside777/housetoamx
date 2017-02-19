@@ -31,7 +31,7 @@
     "offValue": "living=off",
     "topics":
       {
-      "statusGet":    "hose/lights",
+      "statusGet":    "house/lights/get/livingroom",
       "statusSet":    "house/lights/livingroom"
       }
     },
@@ -46,7 +46,7 @@
     "offValue": "living=off",
     "topics":
     {
-    "statusGet":    "hose/lights",
+    "statusGet":    "house/lights/get/frountwall",
     "statusSet":    "house/lights/frountwall"
     }
     },
@@ -61,7 +61,7 @@
     "offValue": "living=off",
     "topics":
     {
-      "statusGet":    "hose/lights",
+      "statusGet":    "house/lights/get/frontpourch",
       "statusSet":    "house/lights/frontpourch"
     }
   },
@@ -76,7 +76,7 @@
     "offValue": "living=off",
     "topics":
     {
-      "statusGet":    "hose/lights",
+      "statusGet":    "house/lights/get/hallway",
       "statusSet":    "house/lights/hallway"
     }
   },
@@ -91,7 +91,7 @@
     "offValue": "living=off",
     "topics":
     {
-      "statusGet":    "hose/lights",
+      "statusGet":    "house/lights/get/masterbed",
       "statusSet":    "house/lights/masterbed"
     }
   },
@@ -106,7 +106,7 @@
     "offValue": "living=off",
     "topics":
     {
-      "statusGet":    "hose/lights",
+      "statusGet":    "house/lights/get/masterbathroom",
       "statusSet":    "house/lights/masterbathroom"
     }
   },
@@ -121,7 +121,7 @@
     "offValue": "living=off",
     "topics":
     {
-      "statusGet":    "hose/lights",
+      "statusGet":    "house/lights/get/isabella",
       "statusSet":    "house/lights/isabella"
     }
   },
@@ -136,7 +136,7 @@
     "offValue": "living=off",
     "topics":
     {
-      "statusGet":    "hose/lights",
+      "statusGet":    "house/lights/get/alfresco",
       "statusSet":    "house/lights/alfresco"
     }
   },
@@ -151,13 +151,13 @@
     "offValue": "living=off",
     "topics":
     {
-      "statusGet":    "hose/lights",
+      "statusGet":    "house/lights/get/kitchen",
       "statusSet":    "house/lights/kitchen"
     }
   },
   {
     "accessory": "mqtt-dimmer",
-    "name": "dinning",
+    "name": "dining",
     "url": "mqtt://10.0.0.61",
     "username": "josh",
     "password": "josh",
@@ -166,7 +166,7 @@
     "offValue": "living=off",
     "topics":
     {
-      "statusGet":    "hose/lights",
+      "statusGet":    "house/lights/get/dinning",
       "statusSet":    "house/lights/dinning"
     }
   },
@@ -181,9 +181,39 @@
     "offValue": "living=off",
     "topics":
     {
-      "statusGet":    "hose/lights",
+      "statusGet":    "house/lights/get/studio",
       "statusSet":    "house/lights/studio"
     }
+  },
+  {
+    "accessory": "mqtt-dimmer",
+    "name": "office",
+    "url": "mqtt://10.0.0.61",
+    "username": "josh",
+    "password": "josh",
+    "caption": "office lights",
+    "onValue": "living=on",
+    "offValue": "living=off",
+    "topics":
+    {
+      "statusGet":    "house/lights/get/office",
+      "statusSet":    "house/lights/office"
+    }
+  },
+  {
+    "accessory": "mqttswitch",
+    "name": "Projector",
+    "url": "mqtt://10.0.0.61",
+    "username": "",
+    "password": "",
+    "caption": "Projector controlsE",
+    "topics": {
+      "statusGet": 	"room/display/1/status",
+      "statusSet": 	"room/display/1/power"
+    },
+    "onValue": "on",
+    "offValue": "off"
+
   }
   ]
 }
